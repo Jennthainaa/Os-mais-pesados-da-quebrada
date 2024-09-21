@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Littlest Pet Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Littlest Pet Shop</h1>
+        <p>Hello, aumigos! Garanta que o seu animalzinho receba os melhores cuidados!</p>
+        <form>
+            <label for="nome">Nome</label>
+            <input type="text"  name="nome" id="nome">
+            
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="cpf">
+            <script>
+                const cpfInput = document.getElementById("cpf")
+                
+                funcion formatarCPF(cpf){
+                    cpf = cpf.replace(/\D/g, '');
+
+                    cpf = cpf.replace(/(\d{3})(\d{3})(\d{3})(\d{2}), '$1.$2.$3-$4');
+
+                    return cpf   
+                }
+               
+                cpfInput.addEventListener('input', () => {
+                    cpfInput.value = formatarCPF(cpfInput.value);
+                });
+            </script>
+
+            <label for="telefone">Celular/Telefone</label>
+            <input type="tel" name="telefone" id="telefone">
+
+            <label for="data-nascimento">Data de Nascimento</label>
+            <input type="date" name="data-nascimento" id="data-nascimento">
+
+            <label for="endereço"> Endereço</label>
+            <input type="text" name="endereço" id="endereço">
+
+            <label for="complemento">Complemento</label>
+            <input type="text" name="complemento" id="complemento">
+
+            <label for="estado">Estado</label>
+            <select id="estado">
+                <option value="">Selecione o estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="Mt">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraiba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+
+            </select>
+
+
+
+        </form>
+    </div>
+</body>
+</html>
