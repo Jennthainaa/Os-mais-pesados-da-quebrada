@@ -78,10 +78,24 @@
                 <option value="TO">Tocantins</option>
 
             </select>
+            <label for="senha">Senha</label>
+            <input type="password"  id="senha" minlength="4" maxlength="8">
 
+            <label for="confirmarSenha">Confirmar senha</label>
+            <input type="password"  id="confirmarSenha">
+            <p>A senha deve ter entre4 e 8 caracteres</p>
 
+            <input type="checkbox" id="termos" name="termos" required style="display: none;">
+            <label for="termos">
+                <button type="submit">Li e estou de acordo com o Termo de Uso e Política de Privacidade</button>
+            </label>
+
+            <button type="submit">Cadastrar</button>
 
         </form>
+
+        <button type="button">Voltar</button>
+        <button type="button">Avançar</button>
     </div>
 </body>
 </html>
