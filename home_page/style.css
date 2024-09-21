@@ -1,4 +1,17 @@
-.logo1{
-    margin-left: 10px;
-    width: 170px;
+.barra{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0f0f0;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.logo1 {
+    width: 10%;
+    padding-right: 60%;
 }
