@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fafaf2;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* O conteúdo ocupará pelo menos 100% da altura da tela */
+}
+
+header {
+    background-color: #8b3925;
+    padding: 20px 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between; /* Mantém os elementos nos extremos */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: #fafaf2;
+}
+
+.car {
+    width: 50px;
+    height: auto;
+    order: 3; /* Carrinho continua à direita */
+}
+
+.wrapper h1 {
+    font-family: "Berkshire Swash", serif;
+    font-size: 36px;
+    margin: 0;
+    text-align: left; /* Alinha o título à esquerda */
+    order: 1; /* Coloca o título no início, à esquerda */
+}
+
+.pesquisa {
+    display: flex;
+    align-items: center;
+      order: 1; /* Posiciona a barra de pesquisa logo antes do carrinho */
+}
+input[type="search"] {
+    padding: 1vw;
+    font-size: 16px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    width: 30vw;
+    /* Remover margem para maximizar a proximidade */
+}
+
+.bx {
+    font-size: 24px;
+    color: #fafaf2;
+    margin-left: 0; /* Remove o espaço à esquerda do ícone do carrinho */
+    margin-right: -5vw;
+}
+
+/* Ajustando o espaço entre a barra de pesquisa e o carrinho */
+.pesquisa .bx {
+    margin-left: -20vw; /* Ajuste fino para posicionar o carrinho */
+}
+
+main {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Coloca os elementos mais para baixo */
+    align-items: center;
+    padding-bottom: 50px; /* Espaçamento inferior */
+}
+
+
+.cat {
+    
+    display: block;
+    margin: % auto 5%;
+    width: 20%;
+    height: 42%;
+}
+
+.emptymessage {
+    text-align: center;
+    font-family: "Red Hat Text", serif;
+    font-size: 24px;
+    color: #343536;
+    margin-top: 20px;
+}
+
+.subtext {
+    text-align: center;
+    font-family: "Red Hat Text", serif;
+    font-size: 16px;
+    color: #343536;
+    margin-top: 5px; /* Reduzido para deixar mais próximo da mensagem anterior */
+}
+.explore-button {
+    display: block;
+    width: 250px;
+    background-color: #8b3925;
+    color: #fafaf2;
+    padding: 12px;
+    text-align: center;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-top: 50px; /* Aumenta o espaçamento entre o subtexto e o botão */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.explore-button:hover {
+    background-color: #6e2f1d; /* Cor ao passar o mouse */
+}
